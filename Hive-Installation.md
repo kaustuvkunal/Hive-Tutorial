@@ -28,5 +28,5 @@
     `export HADOOP_HEAPSIZE=1024`
 
 
-4)Now set hive metastore  [refer]()
+4)Now set hive metastore  [refer](https://github.com/kaustuvkunal/Hive-Tutorial/blob/master/mysql-metastore-setup.md)
  
