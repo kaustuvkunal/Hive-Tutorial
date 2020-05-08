@@ -1,0 +1,8 @@
+ID	Name	Age	Address	Salary
+1	Ross	32	Ahmedabad	2000
+2	Rachel	25	Delhi	1500
+3	Chandler	23	Kota	2000
+4	Monika	25	Mumbai	6500
+5	Mike	27	Bhopal	8500
+6	Phoebe	22	MP	4500
+7	Joey	24	Indore	10000

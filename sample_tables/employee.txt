@@ -1,0 +1,9 @@
+id, name, dept, yoj
+1, gopal, TP, 2012
+2, kiran, HR, 2012
+3, kaleel,SC, 2013
+4, Prasanth, SC, 2013
+5, sunny, SC, 2009
+6, animesh, HR, 2009
+7, sumeer, SC, 2010
+8, sarthak, TP, 2010
