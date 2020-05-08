@@ -14,7 +14,7 @@
       
       `GRANT ALL  PRIVILEGES  on metastore.* to 'hiveuser'@'localhost' ;`
       
-6. Configure hive-site.xml  inside $HIVE_HOME/conf/ and upadate
+6. Configure hive-site.xml  inside $HIVE_HOME/conf/ and paste below properties
 
     ```
    <configuration> 
