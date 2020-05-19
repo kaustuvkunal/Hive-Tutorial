@@ -318,4 +318,20 @@ FULL OUTER JOIN ORDERS o
 ON (c.ID = o.CUSTOMER_ID);
 ```
 
- 
+#### MapSide join
+```
+SELECT /*MAPJOIN(c)*/ c.ID, c.NAME, c.AGE, o.AMOUNT
+FROM CUSTOMERS c JOIN ORDERS o
+ON (c.ID = o.CUSTOMER_ID)
+```
+
+#### Semi join
+```
+SELECT  c.ID, c.NAME, c.AGE, o.AMOUNT
+FROM CUSTOMERS c  LEFT SEMI JOIN ORDERS o
+ON (c.ID = o.CUSTOMER_ID)
+```
+
+
+
+
