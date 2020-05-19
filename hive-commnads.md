@@ -333,5 +333,24 @@ ON (c.ID = o.CUSTOMER_ID)
 ```
 
 
+### Hive Fuctions
+- CONCAT
+- CONCAT_WS
+- TRIM
+- LTRIM
+- RTRIM
+- REVERSE
+- SPLIT
+- SPACE
+
+- EXPLODE : For lateral view  i.e mutilple value is segmement as one value at each row ( record)
+
+```
+select col1
+from table1
+LATERAL VIEW explode(col) explodeVal as col1
+```
+
+
 
 
