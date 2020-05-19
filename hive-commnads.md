@@ -333,7 +333,8 @@ ON (c.ID = o.CUSTOMER_ID)
 ```
 
 
-### Hive Fuctions
+#### Hive Fuctions
+
 - CONCAT
 - CONCAT_WS
 - TRIM
