@@ -56,5 +56,5 @@
     </property>
 </configuration>
     
-7. Refrash haddop and start hive 
+7. Refresh haddop and start hive 
       - `hive`
