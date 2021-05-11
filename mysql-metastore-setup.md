@@ -3,7 +3,7 @@
 1.  Install mysql  and login to mysql terminal 
 2.  Create metastore database 
       -`CREATE DATABASE metastore;`
-3.  Download   mysql-connector-java-($mysql-version)-jar  and copy into HIVE_HOME's lib directory 
+3.  Download   mysql-connector-java-($mysql-version)-jar  and copy into HIVE_HOME's lib directory . use link[https://mvnrepository.com/artifact/mysql/mysql-connector-java] for download
      -  `cp mysql-connector-java-8.0.19.jar HIVE_HOME/lib/ `
 4.  Create the Initial database schema using  hive-schema-3.1.0.mysql (here 3.1.0 is mysql version select wrt to your mysql version)
       
