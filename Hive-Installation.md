@@ -5,7 +5,7 @@
 
 2. Set Environment variable HIVE_HOME to point to the installation directory and add $HIVE_HOME/bin to  PATH:
 
-    `export HIVE_HOME=/Users/kaustuv/apache-hive-2.3.4-bin`
+    `export HIVE_HOME=/Users/$user/apache-hive-2.3.4-bin`
 
     `export PATH=$HIVE_HOME/bin:$PATH`
 
@@ -22,11 +22,12 @@
 
 4) Set hive-env.sh with hadoop path, hive-conf  and  heap size 
 
-    `export HADOOP_HOME=/Users/hadoop/hadoop-2.6.0/`
+    `export HADOOP_HOME=/Users/$user/hadoop-2.6.0/`
     
-    `export HIVE_CONF_DIR=/Users/hadoop/hive/conf`
+    `export HIVE_CONF_DIR=/Users/$user/hive/conf`
     `export HADOOP_HEAPSIZE=1024`
 
 
 4)Now set hive metastore  [refer](https://github.com/kaustuvkunal/Hive-Tutorial/blob/master/mysql-metastore-setup.md)
  
+*set  user_name in place of $user , update hadoop version from 2.6.0 to your version 
