@@ -5,16 +5,17 @@
       -`CREATE DATABASE metastore;`
 3.  Download   mysql-connector-java-($mysql-version)-jar  and copy into HIVE_HOME's lib directory . use [link](https://mvnrepository.com/artifact/mysql/mysql-connector-java) for download
      -  `cp mysql-connector-java-8.0.19.jar HIVE_HOME/lib/ `
-4.  Create the Initial database schema using  hive-schema-3.1.0.mysql (here 3.1.0 is hadoop version select wrt to your hadoop version)
+4.  Use Metastore  `use metastore;`
+5.  Create the Initial database schema using  hive-schema-3.1.0.mysql (here 3.1.0 is hadoop version select wrt to your hadoop version)
       
       `SOURCE $HIVE_HOME/scripts/metastore/upgrade/mysql/hive-schema-3.1.0.mysql.sql;`
       
-5.   Create mysql user account for hive user  and grant access to metastore db
+6.   Create mysql user account for hive user  and grant access to metastore db
       `CREATE USER 'hiveuser'@'localhost' IDENTIFIED BY 'hivepassword';`
       
       `GRANT ALL  PRIVILEGES  on metastore.* to 'hiveuser'@'localhost' ;`
       
-6. Configure hive-site.xml  inside $HIVE_HOME/conf/ and paste below properties
+7. Configure hive-site.xml  inside $HIVE_HOME/conf/ and paste below properties
 
     ```
    <configuration> 
@@ -56,5 +57,5 @@
     </property>
 </configuration>
     
-7. Refresh haddop and start hive 
+8. Refresh haddop and start hive 
       - `hive`
