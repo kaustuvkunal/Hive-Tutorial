@@ -1,21 +1,21 @@
 ###  Steps to Setup mysql as hive metastore
 
-1.  Install mysql  and login to mysql terminal 
-2.  Create metastore database <li>
+<li> Install mysql  and login to mysql terminal 
+<li>  Create metastore database <li>
              `CREATE DATABASE metastore;`
-3.  Download   mysql-connector-java-($mysql-version)-jar  and copy into HIVE_HOME's lib directory . use [link](https://mvnrepository.com/artifact/mysql/mysql-connector-java) for download
+<li>  Download   mysql-connector-java-($mysql-version)-jar  and copy into HIVE_HOME's lib directory . use [link](https://mvnrepository.com/artifact/mysql/mysql-connector-java) for download
      -  `cp mysql-connector-java-8.0.19.jar HIVE_HOME/lib/ `
-4.  Use Metastore  `use metastore;`
-5.  Create the Initial database schema using  hive-schema-3.1.0.mysql (here 3.1.0 is hadoop version select wrt to your hadoop version)
+<li>  Use Metastore  `use metastore;`
+<li>  Create the Initial database schema using  hive-schema-3.1.0.mysql (here 3.1.0 is hadoop version select wrt to your hadoop version)
       
       `SOURCE $HIVE_HOME/scripts/metastore/upgrade/mysql/hive-schema-3.1.0.mysql.sql;`
       
-6.   Create mysql user account for hive user  and grant access to metastore db
+<li>   Create mysql user account for hive user  and grant access to metastore db
       `CREATE USER 'hiveuser'@'localhost' IDENTIFIED BY 'hivepassword';`
       
       `GRANT ALL  PRIVILEGES  on metastore.* to 'hiveuser'@'localhost' ;`
       
-7. Configure hive-site.xml  inside $HIVE_HOME/conf/ and paste below properties
+<li> Configure hive-site.xml  inside $HIVE_HOME/conf/ and paste below properties
 
     ```
    <configuration> 
@@ -57,5 +57,5 @@
     </property>
 </configuration>
     
-8. Refresh haddop and start hive 
+<li> Refresh haddop and start hive 
       - `hive`
