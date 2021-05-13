@@ -1,8 +1,8 @@
 ###  Steps to Setup mysql as hive metastore
 
 1.  Install mysql  and login to mysql terminal 
-2.  Create metastore database 
-      -`CREATE DATABASE metastore;`
+2.  Create metastore database <li>
+             `CREATE DATABASE metastore;`
 3.  Download   mysql-connector-java-($mysql-version)-jar  and copy into HIVE_HOME's lib directory . use [link](https://mvnrepository.com/artifact/mysql/mysql-connector-java) for download
      -  `cp mysql-connector-java-8.0.19.jar HIVE_HOME/lib/ `
 4.  Use Metastore  `use metastore;`
