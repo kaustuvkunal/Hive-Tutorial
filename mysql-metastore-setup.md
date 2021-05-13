@@ -12,7 +12,7 @@
 4. Use Metastore : 
             `use metastore;`
             
-5. Create the Initial metastore database schema: using  hive-schema-3.1.0.mysql.sql file (here 3.1.2 is my hive version so I select 3.1.0, select wrt to your hive version also use update schema in case metastore already exist and you are updating hive version) 
+5. Create the Initial metastore database schema: using  hive-schema-3.1.0.mysql.sql file (here 3.1.2 is my hive version so I select 3.1.0, select wrt to your hive version. In case metastore already exist and you are updating hive version use upgrade-.sql scripts)  
       
           ` SOURCE $HIVE_HOME/scripts/metastore/upgrade/mysql/hive-schema-3.1.0.mysql.sql;`
           
